@@ -10,11 +10,32 @@
     @font-face {
   font-family: 'Heavitas';
   src: url('Heavitas.ttf')
+  
+      .top-bar {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-button, .right-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+}
   </style>
 </head>
 <body>
+  <div class="top-bar">
+  <button class="left-button">Left Button</button>
+  <button class="right-button">Right Button</button>
+</div>
   <p1 id="typing-text"></p1>
-<script>const text = "The Best Coaching in Oce";
+  <p2>Why choose Jynk?</p2>
+  
+  
+  <script>const text = "The Best Coaching in Oce";
 const typingText = document.getElementById("typing-text");
 let i = 0;
 
