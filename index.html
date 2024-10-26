@@ -14,13 +14,11 @@ function type() {
   if (i < text.length) {
     typingText.textContent += text.charAt(i);
     i++;
-    setTimeout(type, "Math.floor"); // Adjust the delay (in milliseconds) as needed
+    setTimeout(type, 100); // Adjust the delay (in milliseconds) as needed
   }
 }
 
 type();</script>
-  <script>function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}</script>
+
 </body>
 </html>
