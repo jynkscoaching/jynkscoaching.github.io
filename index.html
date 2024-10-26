@@ -2,19 +2,30 @@
 <html>
 <head>
   <title>Jynks Coaching</title>
+  <style>
+    p1 {
+      font-size: 72px
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
-  <p id="typing-text"></p>
-<script>const text = "The Best Coaching In OCE";
+  <p1 id="typing-text"></p1>
+<script>const text = "The Best Coaching in Oce";
 const typingText = document.getElementById("typing-text");
-
 let i = 0;
 
 function type() {
   if (i < text.length) {
     typingText.textContent += text.charAt(i);
     i++;
-    setTimeout(type, 100); // Adjust the delay (in milliseconds) as needed
+    setTimeout(type,   
+ 100); // Adjust the delay (in milliseconds) as needed
+  } else {
+    // Reset the index and clear the text after the animation finishes
+    i = 0;
+    typingText.textContent = '';
+    setTimeout(type, 600); // Start the animation again after a delay
   }
 }
 
