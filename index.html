@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jynks Coaching</title>
+</head>
+<body>
+  <p id="typing-text"></p>
+<script>const text = "The Best Coaching In OCE";
+const typingText = document.getElementById("typing-text");
+
+let i = 0;
+
+function type() {
+  if (i < text.length) {
+    typingText.textContent += text.charAt(i);
+    i++;
+    setTimeout(type, "getRandomNumber"); // Adjust the delay (in milliseconds) as needed
+  }
+}
+
+type();</script>
+  <script>function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}</script>
+</body>
+</html>
